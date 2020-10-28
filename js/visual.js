@@ -120,7 +120,7 @@
 	  	Dom.actions.createBottles(a);
 
 	  	var wml = $('#table li').first().width();
-	  	console.log(wml);
+	  	//console.log(wml);
 			Dom.events.showNumbers('#add-show_iron');
 			Dom.events.showNumbers('#add-show_app');
 			Dom.events.setWidth('#ul-size_width', '#sito');
@@ -131,5 +131,5 @@
 			Dom.events.getSuperPrimes(a);
 	  }
   };
-  Dom.init(30000);
+  Dom.init(30000);// max limite = 1e+9
 })(jQuery);
