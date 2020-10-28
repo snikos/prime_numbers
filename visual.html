@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ir numbers">
+    <meta name="author" content="snikos">
+    <title id="title">Visual experiment with prime numbers</title>
+    <link rel="stylesheet" href="css/visual.css">
+    <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body>
+  <div id="sito" class="container">
+    <table class="panel" border="1" cellpadding="4" cellspacing="0">
+      <tr>
+        <td rowspan="1" title="Show blocks with prime numbers"><button id="add-show_iron">prime</button></td>
+        <td title="Resize this poligon">T:<input type="number" id="ul-size_width" min="1" max="1200" step="1" value="387" /></td>
+        <td title="Resize width of blocks">W:<input type="number" id="li-size_width" min="1" max="12" step="1" value="5" /></td>
+        <td title="Resize height of blocks">H:<input type="number" id="li-size_height" min="1" max="12" step="1" value="1" /></td>
+        <td title="Go to a home page"><a href="index.html" title="shows the prime numbers" target="_blank">home</a></td>
+      </tr>
+      <tr>
+        <td colspan="1" title="Show blocks without prime numbers"><button id="add-show_app">not prime</button></td>
+        <td colspan="2">Prime: current num: <span id="current-num"></span></td>
+        <td colspan="2">Prime: last num: <span id="total-nums"></span></td>
+      </tr>
+    </table>
+    <ul id="table" class="show_iron table"></ul>
+  </div>
+  <script type="text/javascript" src="js/jquery-2.2.4.js"></script>
+  <script type="text/javascript" src="js/visual.js"></script>
+</body>
+</html>
